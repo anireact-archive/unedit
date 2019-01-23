@@ -1,0 +1,5 @@
+{
+    "extends": "@anireact/lerna-config",
+    "packages": ["@unedit/*"],
+    "version": "1.0.0-wip.0"
+}
