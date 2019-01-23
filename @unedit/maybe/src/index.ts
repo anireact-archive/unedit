@@ -54,7 +54,7 @@ export class Nothing<A> extends Maybe<A> {
     constructor() {
         super();
 
-        return nothing || this;
+        return nothing || (nothing = this);
     }
 
     map<B>(f: (a: A) => B) {
