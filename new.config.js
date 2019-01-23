@@ -20,7 +20,7 @@ module.exports = {
     main: 'dist/index.js',
     package: x => ({
         ...x,
-        types: x.main.replace(/\.js$/, '.d.ts'),
+        types: x.main.replace(/\.js$/u, '.d.ts'),
         scripts: {
             'build:babel': 'babel --source-maps --out-dir dist --extensions .ts src',
             'build:tsc': 'tsc --declaration --emitDeclarationOnly --outDir dist --pretty --rootDir src',
