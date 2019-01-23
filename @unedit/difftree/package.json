@@ -1,0 +1,21 @@
+{
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "bugs": "https://github.com/anireact/unedit/issues?q=is:issue+label:@unedit/difftree",
+    "description": "Differential binary tree for mapping offsets between strings in different encodings.",
+    "homepage": "https://github.com/anireact/unedit/tree/master/@unedit/difftree",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "name": "@unedit/difftree",
+    "repository": "anireact/unedit",
+    "scripts": {
+        "build": "yarn build:babel && yarn build:tsc",
+        "build:babel": "babel --source-maps --out-dir dist --extensions .ts src",
+        "build:tsc": "tsc --declaration --emitDeclarationOnly --outDir dist --pretty --rootDir src"
+    },
+    "types": "dist/index.d.ts",
+    "version": "1.0.0-wip.0",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "core-js": "^2.6.3"
+    }
+}
