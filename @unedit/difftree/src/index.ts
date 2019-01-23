@@ -132,6 +132,7 @@ export class DiffTree<A extends n, B extends n> {
     readonly l: DiffTree<A, B> | null;
     readonly r: DiffTree<A, B> | null;
 
+    // eslint-disable-next-line max-params
     constructor(a: A, b: B, sa: A, sb: B, l: DiffTree<A, B> | null = null, r: DiffTree<A, B> | null = null) {
         this.a = a;
         this.b = b;
